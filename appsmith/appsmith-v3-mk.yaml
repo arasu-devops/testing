@@ -14,6 +14,8 @@ spec:
       labels:
         app: appsmith
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: multinode-m02
       containers:
         - name: appsmith-container
           image: appsmith/appsmith-ee:v1.60
